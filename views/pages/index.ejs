@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div style="width: 50%;float: left">
-                    <form action="http://localhost:4000/fileupload" method="post" enctype="multipart/form-data">
+                    <form action="http://10.10.223.226:4000/fileupload" method="post" enctype="multipart/form-data">
                       <input type="file" name="filetoupload"><br>
                       <input type="submit" value="Upload">
                   </form>
@@ -65,8 +65,8 @@ td {
   crossorigin="anonymous"></script>
 <script>
     $.support.cors = true;
-    const urlToGetAllFiles = 'http://localhost:4000/getAllFilesFromFolder';
-    const urlDownLoad = 'http://localhost:4000/download';
+    const urlToGetAllFiles = 'http://10.10.223.226:4000/getAllFilesFromFolder';
+    const urlDownLoad = 'http://10.10.223.226:4000/download';
     $.ajax({
         url: urlToGetAllFiles,
         type: 'GET',
